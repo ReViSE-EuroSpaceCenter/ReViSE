@@ -1,3 +1,6 @@
 [submodule "ReViSE-backend"]
 	path = ReViSE-backend
 	url = https://github.com/hraskin/ReViSE-backend.git
+[submodule "ReViSE-frontend"]
+	path = ReViSE-frontend
+	url = https://github.com/hraskin/ReViSE-frontend.git
