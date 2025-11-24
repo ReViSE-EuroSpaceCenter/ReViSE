@@ -1,0 +1,3 @@
+[submodule "ReViSE-backend"]
+	path = ReViSE-backend
+	url = https://github.com/hraskin/ReViSE-backend.git
