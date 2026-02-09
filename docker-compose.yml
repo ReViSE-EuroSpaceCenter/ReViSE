@@ -5,8 +5,8 @@ networks:
 services:
 
   backend:
-    build: ./backend
-    container_name: backend
+    build: ./ReViSE-backend
+    container_name: revise-backend
     restart: always
     networks:
       - app-network
@@ -14,8 +14,8 @@ services:
       - "8080"
 
   frontend:
-    build: ./frontend
-    container_name: frontend
+    build: ./ReViSE-frontend
+    container_name: revise-frontend
     restart: always
     networks:
       - app-network
