@@ -21,6 +21,8 @@ services:
       - app-network
     expose:
       - "3000"
+    env_file:
+      - ./ReViSE-frontend/.env
 
   nginx:
     image: nginx:alpine
