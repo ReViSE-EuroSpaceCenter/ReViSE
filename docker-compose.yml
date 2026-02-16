@@ -14,15 +14,16 @@ services:
       - "8080"
 
   frontend:
-    build: ./ReViSE-frontend
+    build:
+      context: ./ReViSE-frontend
+      args:
+        NEXT_PUBLIC_API_URL: https://test-revise.org
     container_name: revise-frontend
     restart: always
     networks:
       - app-network
     expose:
       - "3000"
-    env_file:
-      - ./ReViSE-frontend/.env
 
   nginx:
     image: nginx:alpine
