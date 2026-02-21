@@ -10,6 +10,9 @@ services:
     restart: always
     networks:
       - app-network
+    volume:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
     expose:
       - "8080"
 
