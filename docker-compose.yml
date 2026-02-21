@@ -10,7 +10,7 @@ services:
     restart: always
     networks:
       - app-network
-    volume:
+    volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
     expose:
