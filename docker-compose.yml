@@ -42,6 +42,9 @@ services:
       - ./ReViSE-backend/grafana/dashboards:/var/lib/grafana/dashboards
     ports:
       - "3030:3000"
+    environment:
+      - GF_SERVER_ROOT_URL=%(protocol)s://%(domain)s/grafana/
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
 
   frontend:
     build:
